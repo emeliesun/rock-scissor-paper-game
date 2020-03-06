@@ -1,0 +1,119 @@
+header {
+    background-color: rgb(133, 205, 250);
+    margin: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.navbox {
+    display: flex;
+    justify-content: center;
+}
+
+.letsplay {
+    width: 100px;
+    height: 100px;
+  }
+
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 100%;
+}
+
+.scoretext {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.scorecount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(209, 224, 240);
+    height: 120px;
+}
+
+.scoreNumber {
+    font-size: 20px;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.userchoiceleft {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 100px 0 0px;
+    height: fit-content;
+    margin: 0px;
+}
+
+.gameplayers{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+button{
+    border-radius: 100%;
+    border-style: solid;
+    border-width: initial;
+    border-color:  rgb(209, 224, 240);
+}
+
+img {
+    border: black;
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+}
+
+.imgAttribute {
+    opacity: 0.3;
+}
+
+.userchoiceright {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 0px 100px;
+    height: fit-content;
+    margin: 0px;
+}

@@ -1,3 +1,11 @@
+  var $winner = document.getElementById('winnerReveal');
+  var $setWinner = document.getElementById('SetWinnerReveal');
+  var startModal = document.getElementById('screenpageModal');
+  var startButton = document.getElementById('StartButton');
+  startButton.addEventListener('click', function() {
+    startModal.style.display = 'none';
+  });
+
 class Game {
   constructor() {
     this.user = new Player1();
@@ -7,31 +15,10 @@ class Game {
   }
 
   insertFirstPage() {
-    var modal = document.getElementById('screenpageModal');
-    modal.classList.remove('notVisible');
-    modal.style.display = 'block';
-    var span = document.getElementsByClassName('close2')[0];
-
-    span.onclick = function() {
-      modal.style.display = 'none';
-      modal.setAttribute('class', ' modal notVisible');
-    };
-
-    // window.onclick = function(event) {
-    //   modal.style.display = 'none';
-    //   modal.setAttribute('class', 'modal notVisible');
-    // };a
-
-    var startButton = document.getElementById('StartButton');
-
-      startButton.onclick = function(event) {
-      modal.style.display = 'none';
-      modal.setAttribute('class', 'modal notVisible');
-    };
+    startModal.style.display = 'block';
   }
 
   startGame() {
-    this.insertFirstPage();
     setInterval(() => {
       renderEverything();
     }, 100);
@@ -48,10 +35,11 @@ class Game {
     ) {
       console.log('Player 1 wins!');
       this.scoreboard.userScore++;
-      // this.renderPick();
       this.checkWinner();
       this.currentPlayer.chooseHand = '';
       this.computer.chooseHand = '';
+      $setWinner.innerHTML = `Player 1`;
+      this.updategametest();
     } else if (
       (this.currentPlayer.chooseHand === 'a' &&
         this.computer.chooseHand === 'l') ||
@@ -65,6 +53,8 @@ class Game {
       this.checkWinner();
       this.currentPlayer.chooseHand = '';
       this.computer.chooseHand = '';
+       $setWinner.innerHTML = `Player 2 `;
+       this.updategametest();
     } else if (
       (this.currentPlayer.chooseHand === 'a' &&
         this.computer.chooseHand === 'j') ||
@@ -79,38 +69,38 @@ class Game {
     }
   }
 
-  renderPick(){
-    setInterval(() => {
-   if (this.scoreboard.userScore++) {
-     alert('player 1 won');
-   } else if (this.scoreboard.compScore++) {
-     alert('player 2 won');
-   }
-    }, 100)
-  }
+  updategametest(){
+    var setModal = document.getElementById('revealSetWinner');
+    setModal.style.display = 'block';
+
+    window.onclick = function(event) {
+    setModal.style.display = 'none';
+    setModal.setAttribute('class', 'modal notVisible');
+    };
+
+    var contBtn = document.getElementsByClassName('conBtn');
+
+    contBtn.onclick = function(event) {
+    setModal.style.display = 'none';
+    setModal.setAttribute('class', 'modal notVisible');
+    }
+}
 
   checkWinner() {
-    // setTimeout(() => {
       if (this.scoreboard.userScore === 3) {
-        this.endgame();
+        $winner.innerHTML = `Player 1 won this game!`;
+        this.endgameModal();
         this.resetGame();
       } else if (this.scoreboard.compScore === 3) {
-        this.endgame();
+        $winner.innerHTML = `Player 2 won this game!`;
+        this.endgameModal();
         this.resetGame();
       }
-    // },);
   }
 
-  endgame() {
+  endgameModal() {
     var modal = document.getElementById('winnerRevealModal');
-    // modal.classList.remove('notVisible');
     modal.style.display = 'block';
-    var span = document.getElementsByClassName('close')[0];
-
-    span.onclick = function() {
-      modal.style.display = 'none';
-      modal.setAttribute('class', ' modal notVisible');
-    };
 
     window.onclick = function(event) {
       modal.style.display = 'none';

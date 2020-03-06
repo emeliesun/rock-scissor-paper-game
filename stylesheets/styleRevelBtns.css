@@ -1,0 +1,85 @@
+.modal {
+    display: none;
+    position: fixed; 
+    padding-top: 80px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.notVisible{
+    display: none; 
+}
+
+#winnerRevealModal, #revealSetWinner {
+    z-index: 1;
+}
+
+.winnerRevealModalContent, .revealSetWinnerContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid rgb(68, 133, 173);;
+    width: 80%;
+    text-align: center;
+}
+
+.afterWinRevealQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#yesBtn, .conBtn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(74, 186, 0);
+    background-color: rgb(105, 186, 0);
+    color: white;
+}
+
+#noBtn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(186, 43, 0);
+    background-color: rgb(186, 12, 0);
+    color: white;
+}
+
+.ybuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}

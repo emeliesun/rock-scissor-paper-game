@@ -1,6 +1,7 @@
 let scoreDiv = document.getElementsByClassName("scorecount");
 let scoreH1 = document.getElementById('scoreNumber');
 let winner = document.getElementById('winnerReveal');
+// let setWinner = document.getElementById('revealSetWinner');
 
 class Scoreboard {
     constructor(){
@@ -9,7 +10,7 @@ class Scoreboard {
     }
     renderScoreboard(){
         if (game.scoreboard.userScore === 3){
-            winner.innerHTML = `Congratulations Player 1! You won the game!`;
+            winner.innerHTML = `Congratulations Player 1! You won the game!`; 
         }else if (game.scoreboard.compScore === 3) {
             winner.innerHTML = `Congratulations Player 2! You won the game!`;
               }

@@ -1,7 +1,6 @@
 class Player1 {
   constructor() {
     this.chooseHand = '';
-    // choosePick(){}
   }
 }
 
@@ -9,8 +8,6 @@ class Player2 {
   constructor() {
     this.chooseHand = '';
   }
-  // choosePick(){
-  // }
 }
 
 document.addEventListener('keydown', function(event) {

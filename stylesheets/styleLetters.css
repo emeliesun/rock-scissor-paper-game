@@ -1,41 +1,41 @@
 .posLetterA {
   position: absolute;
-  top: 58%;
-  left: 20%;
+  top: 36%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 
 .posLetterS {
   position: absolute;
-  top: 72%;
-  left: 20%;
+  top: 59%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 
 .posLetterD {
   position: absolute;
-  top: 86%;
-  left: 20%;
+  top: 84%;
+  left: 15%;
   transform: translate(-50%, -50%);
 }
 
 .posLetterJ {
   position: absolute;
-  top: 58%;
-  left: 80%;
+  top: 142px;
+  left: 86%;
   transform: translate(-50%, -50%);
 }
 
 .posLetterK {
   position: absolute;
-  top: 72%;
-  left: 80%;
+  top: 59%;
+  left: 86%;
   transform: translate(-50%, -50%);
 }
 
 .posLetterL {
   position: absolute;
-  top: 86%;
-  left: 80%;
+  top: 84%;
+  left: 86%;
   transform: translate(-50%, -50%);
 }

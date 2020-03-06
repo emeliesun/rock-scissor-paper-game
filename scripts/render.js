@@ -1,6 +1,6 @@
 function renderEverything() {
+  // game.revealSetWinner();
   game.scoreboard.renderScoreboard();
-//    game. renderPick();
   game.checkWhoWonTurn();
   game.checkWinner();
 }

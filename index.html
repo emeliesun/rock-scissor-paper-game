@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./styleLetters.css"/>
+    <link rel="stylesheet" href="./stylesheets/style.css" />
+    <link rel="stylesheet" href="./stylesheets/styleLetters.css"/>
+    <link rel="stylesheet" href="./stylesheets/styleStartscreen.css"/>
+    <link rel="stylesheet" href="./stylesheets/styleRevelBtns.css"/>
   </head>
   <body>
     <header>
@@ -15,33 +17,23 @@
       </nav>
     </header>
 
-<div id="screenpageModal" class="modal notVisible">
+<div id="screenpageModal">
     <div class="screenpageModalContent">
-        <span class="close2">&times;</span>
             <div class="startscreenInstruct">
                 <h2 >Hey players! </h2>
                 <p>Are you ready for the most classic game ever?</p>
                 <h3>Here comes the rules:</h3>
-                <p> <span style="font-weight:bold; color: red;">Player 1</span> starts by choosing rock, scissors or paper by pressing the key representing. Obs, don't show you enemy which key you are pressing!</p>
-                <p>Then it's time for <span style="font-weight: bold; color: blue;">Player 2 </span> to make a move.</p>
-                <p>The first who scores 3 points wins the game!</p>
+                <p> <span style="font-weight:bold; color: red;">Player 1</span> starts by choosing rock, scissors or paper by pressing the key representing.<br>OBS, don't show you enemy which key you are pressing!</p>
+                <div class="playerKeys">
+                <ul class="playerKeysInstruct"><p style="font-weight: bold; color: red;">Player 1</p><li>A = Rock</li><li>S = Scissors</li><li>D = Paper</li></ul>
+                <ul class="playerKeysInstruct"><p style="font-weight: bold; color: blue;">Player 2</p><li>J = Rock</li><li>K = Scissors</li><li>L = Paper</li></ul>
+                </div>
+                <p>Then it's time for <span style="font-weight: bold; color: blue;">Player 2 </span> to make a move.<br>The first who scores 3 points wins the game.</p>
                 <h2>Good luck!</h2>
             <button id="StartButton"> Ready to shake!</button>
         </div>
     </div>
  </div>
-
-<div id="winnerRevealModal" class="modal notVisible">
-    <div class="winnerRevealModalContent">
-        <span class="close">&times;</span>
-        <p id="winnerReveal" class="afterWinRevealQuestion"> </p>
-        <p class="afterWinRevealQuestion">Do you want to play again?</p>
-        <div class="ybuttons">
-            <button id="yesBtn"> YES!</button>
-            <button id="noBtn">Nope!</button>
-        </div>           
-    </div>
-</div>
     
 <div class="scorecount">
     <div class="scoretext" >SCORE</div>
@@ -110,9 +102,30 @@
     </div>
 </div>
 
-    <script src="/scripts/render.js"></script>
-    <script src="/scripts/player.js"></script>
-    <script src="/scripts/scoreboard.js"></script>
-    <script src="/scripts/game.js"></script>
+<div id="winnerRevealModal" class="modal notVisible">
+    <div class="winnerRevealModalContent">
+        <h2>Congratulations!</h2>
+        <p id="winnerReveal" class="afterWinRevealQuestion"></p>
+        <p class="afterWinRevealQuestion">Do you want to play again?</p>
+        <div class="ybuttons">
+            <button id="yesBtn"> YES!</button>
+            <button id="noBtn">Nope!</button>
+        </div>           
+    </div>
+</div>
+
+<div id="revealSetWinner" class="modal not Visible">
+    <div class="revealSetWinnerContent">
+        <h2>Hey, look who won the set!</h2>
+        <p>1 point to:</p>
+        <p id="SetWinnerReveal"></p>
+        <button class="conBtn">Continue the game!</button>
+    </div>
+</div>
+
+    <script src="./scripts/render.js"></script>
+    <script src="./scripts/player.js"></script>
+    <script src="./scripts/scoreboard.js"></script>
+    <script src="./scripts/game.js"></script>
 </body>
 </html>
