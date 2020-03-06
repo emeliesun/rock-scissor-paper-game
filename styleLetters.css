@@ -1,0 +1,41 @@
+.posLetterA {
+  position: absolute;
+  top: 58%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.posLetterS {
+  position: absolute;
+  top: 72%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.posLetterD {
+  position: absolute;
+  top: 86%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.posLetterJ {
+  position: absolute;
+  top: 58%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.posLetterK {
+  position: absolute;
+  top: 72%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.posLetterL {
+  position: absolute;
+  top: 86%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,253 @@
+header {
+    background-color: rgb(133, 205, 250);
+    margin: 0;
+    width: 100%;
+    height: 150px;
+}
+
+.navbox {
+    display: flex;
+    justify-content: center;
+}
+
+.letsplay {
+    width: 100px;
+    height: 100px;
+  }
+
+body{
+    background-color: whitesmoke;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    width: 100%;
+}
+
+.scoretext {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 30px;
+}
+
+.scorecount {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(209, 224, 240);
+    height: 120px;
+}
+
+.scoreNumber {
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.userchoiceleft {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 100px 0 0px;
+    height: fit-content;
+    margin: 0px;
+}
+
+.gameplayers{
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+button{
+    border-radius: 100%;
+    border-style: none;
+}
+
+img {
+    border: black;
+    border-radius: 40%;
+    width: 100px;
+    height: 100px;
+}
+
+.imgAttribute {
+    opacity: 0.3;
+}
+
+.userchoiceright {
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 0 0px 100px;
+    height: fit-content;
+    margin: 0px;
+}
+
+.modal {
+    display: none;
+    position: fixed; 
+    padding-top: 80px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.notVisible{
+    display: none; 
+}
+
+.winnerRevealModalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid rgb(133, 205, 250);
+    width: 80%;
+}
+
+.afterWinRevealQuestion {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#yesBtn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(74, 186, 0);
+    background-color: rgb(105, 186, 0);
+    color: white;
+}
+
+#noBtn {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(186, 43, 0);
+    background-color: rgb(186, 12, 0);
+    color: white;
+}
+
+.ybuttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.screenpageModalContent {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 4px solid rgb(133, 205, 250);
+    width: 50%;
+}
+
+.startscreenInstruct{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.close2 {
+    color: #aaaaaa;
+    float: right;
+    display: flex;
+    justify-self: flex-end;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#StartButton {
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white; 
+    color: black; 
+    border: 2px solid rgb(74, 186, 0);
+    background-color: rgb(105, 186, 0);
+    color: white;
+}

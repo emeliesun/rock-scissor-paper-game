@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styleLetters.css"/>
+  </head>
+  <body>
+    <header>
+      <nav class="navbox">
+        <h1>Rock, Scissors or Paper</h1>
+      </nav>
+    </header>
+
+<div id="screenpageModal" class="modal notVisible">
+    <div class="screenpageModalContent">
+        <span class="close2">&times;</span>
+            <div class="startscreenInstruct">
+                <h2 >Hey players! </h2>
+                <p>Are you ready for the most classic game ever?</p>
+                <h3>Here comes the rules:</h3>
+                <p> <span style="font-weight:bold; color: red;">Player 1</span> starts by choosing rock, scissors or paper by pressing the key representing. Obs, don't show you enemy which key you are pressing!</p>
+                <p>Then it's time for <span style="font-weight: bold; color: blue;">Player 2 </span> to make a move.</p>
+                <p>The first who scores 3 points wins the game!</p>
+                <h2>Good luck!</h2>
+            <button id="StartButton"> Ready to shake!</button>
+        </div>
+    </div>
+ </div>
+
+<div id="winnerRevealModal" class="modal notVisible">
+    <div class="winnerRevealModalContent">
+        <span class="close">&times;</span>
+        <p id="winnerReveal" class="afterWinRevealQuestion"> </p>
+        <p class="afterWinRevealQuestion">Do you want to play again?</p>
+        <div class="ybuttons">
+            <button id="yesBtn"> YES!</button>
+            <button id="noBtn">Nope!</button>
+        </div>           
+    </div>
+</div>
+    
+<div class="scorecount">
+    <div class="scoretext" >SCORE</div>
+    <p id="scoreNumber">0 - 0</p>
+</div>
+
+<div class="row">
+    <div class="userchoiceleft">
+        <h3>Player 1</h3>
+        <ul>
+          <li class="btns">
+            <button class="rock-btn active">
+                <img src="./images/letterA.png" alt="A" class="posLetterA"/>
+                <img src="./images/rockR.png" alt="Rock" />
+            </button>
+          </li>
+          <li class="btns">
+            <button name="scissors-btn">
+                <img src="./images/letterS.png" alt="S" class="posLetterS">
+                <img src="./images/scissorsR.png" alt="Scissors" />
+            </button>
+          </li>
+          <li class="btns">
+            <button name="paper-btn">
+                <img src="./images/letterD.png" alt="D" class="posLetterD">
+                <img src="./images/paperR.png" alt="Paper" />
+            </button>
+          </li>
+        </ul>
+    </div>
+
+    <div class="gameplayers">
+        <figure>
+            <img src="./images/rockR.png" alt="player 1 hand" class="player1hand"/>
+          <figcaption><h2>Player 1</h2></figcaption>
+        </figure>
+
+        <figure>
+          <img src="./images/rockL.png" alt="user player 2 hand" class="player2hand"/>
+          <figcaption><h2>Player 2</h2></figcaption>
+        </figure>
+    </div>
+
+    <div class="userchoiceright">
+        <h3>Player 2</h3>
+        <ul>
+          <li class="btns">
+            <button class="rock-btn-2 active">
+                <img src="./images/letterJ.png" alt="J" class="posLetterJ">
+                <img src="./images/rockR.png" alt="Rock" id="imgAttribute" />
+            </button>
+          </li>
+            <li class="btns">
+                <button name="scissors-btn2">
+                    <img src="./images/letterK.png" alt="K" class="posLetterK">
+                    <img src="./images/scissorsR.png" alt="Scissors" />
+                </button>
+            </li>
+          <li class="btns">
+            <button name="paper-btn2">
+                <img src="./images/letterL.png" alt="L" class="posLetterL">
+                <img src="./images/paperR.png" alt="Paper" />
+            </button>
+          </li>
+        </ul>
+    </div>
+</div>
+
+    <script src="/scripts/render.js"></script>
+    <script src="/scripts/player.js"></script>
+    <script src="/scripts/scoreboard.js"></script>
+    <script src="/scripts/game.js"></script>
+</body>
+</html>
